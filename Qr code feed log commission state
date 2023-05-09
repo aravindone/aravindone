@@ -1,0 +1,102 @@
+aravind@UBUNTU:~/matter/BUILD_PATH$ ./chip-tool pairing code-wifi 0x11 SVAP_4G aravind201 MT:-24J042C00KA0648G00
+[1683639723.611091][33684:33684] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_kvs
+[1683639723.613929][33684:33684] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_factory.ini
+[1683639723.614093][33684:33684] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_config.ini
+[1683639723.614144][33684:33684] CHIP:DL: ChipLinuxStorage::Init: Using KVS config file: /tmp/chip_counters.ini
+[1683639723.614314][33684:33684] CHIP:DL: writing settings to file (/tmp/chip_counters.ini-c3iYE3)
+[1683639723.614606][33684:33684] CHIP:DL: renamed tmp file to file (/tmp/chip_counters.ini)
+[1683639723.614681][33684:33684] CHIP:DL: NVS set: chip-counters/reboot-count = 5 (0x5)
+[1683639723.614854][33684:33684] CHIP:DL: Got Ethernet interface: enp0s3
+[1683639723.614902][33684:33684] CHIP:DL: Found the primary Ethernet interface:enp0s3
+[1683639723.615009][33684:33684] CHIP:DL: Failed to get WiFi interface
+[1683639723.615020][33684:33684] CHIP:DL: Failed to reset WiFi statistic counts
+[1683639723.615051][33684:33684] CHIP:IN: UDP::Init bind&listen port=0
+[1683639723.615075][33684:33684] CHIP:IN: UDP::Init bound to port=44760
+[1683639723.615093][33684:33684] CHIP:IN: UDP::Init bind&listen port=0
+[1683639723.615110][33684:33684] CHIP:IN: UDP::Init bound to port=57103
+[1683639723.615121][33684:33684] CHIP:IN: BLEBase::Init - setting/overriding transport
+[1683639723.615127][33684:33684] CHIP:IN: TransportMgr initialized
+[1683639723.615147][33684:33684] CHIP:FP: Initializing FabricTable from persistent storage
+[1683639723.615940][33684:33684] CHIP:TS: Last Known Good Time: 2023-02-03T18:32:24
+[1683639723.616566][33684:33684] CHIP:FP: Fabric index 0x1 was retrieved from storage. Compressed FabricId 0xC14AE8025B136F38, FabricId 0x0000000000000001, NodeId 0x000000000001B669, VendorId 0xFFF1
+[1683639723.617357][33684:33684] CHIP:ZCL: Using ZAP configuration...
+[1683639723.617667][33684:33684] CHIP:CTL: System State Initialized...
+[1683639723.617699][33684:33684] CHIP:CTL: Stopping commissioning discovery over DNS-SD
+[1683639723.617725][33684:33684] CHIP:CTL: Setting attestation nonce to random value
+[1683639723.617739][33684:33684] CHIP:CTL: Setting CSR nonce to random value
+[1683639723.617758][33684:33684] CHIP:IN: UDP::Init bind&listen port=5550
+[1683639723.617773][33684:33684] CHIP:IN: UDP::Init bound to port=5550
+[1683639723.617781][33684:33684] CHIP:IN: UDP::Init bind&listen port=5550
+[1683639723.617795][33684:33684] CHIP:IN: UDP::Init bound to port=5550
+[1683639723.617801][33684:33684] CHIP:IN: TransportMgr initialized
+[1683639723.617984][33684:33689] CHIP:DL: CHIP task running
+[1683639723.618190][33684:33689] CHIP:CTL: Stopping commissioning discovery over DNS-SD
+[1683639723.618209][33684:33689] CHIP:CTL: Setting attestation nonce to random value
+[1683639723.618268][33684:33689] CHIP:CTL: Setting CSR nonce to random value
+[1683639723.619928][33684:33689] CHIP:CTL: Generating NOC
+[1683639723.621544][33684:33689] CHIP:FP: Validating NOC chain
+[1683639723.622367][33684:33689] CHIP:FP: NOC chain validation successful
+[1683639723.622483][33684:33689] CHIP:FP: Updated fabric at index: 0x1, Node ID: 0x000000000001B669
+[1683639723.622498][33684:33689] CHIP:TS: Last Known Good Time: 2023-02-03T18:32:24
+[1683639723.622503][33684:33689] CHIP:TS: New proposed Last Known Good Time: 2021-01-01T00:00:00
+[1683639723.622506][33684:33689] CHIP:TS: Retaining current Last Known Good Time
+[1683639723.623750][33684:33689] CHIP:FP: Metadata for Fabric 0x1 persisted to storage.
+[1683639723.624241][33684:33689] CHIP:TS: Committing Last Known Good Time to storage: 2023-02-03T18:32:24
+[1683639723.624653][33684:33689] CHIP:CTL: Joined the fabric at index 1. Compressed fabric ID is: 0x0000000000000000
+[1683639723.624674][33684:33689] CHIP:IN: UDP::Init bind&listen port=5550
+[1683639723.624711][33684:33689] CHIP:IN: UDP::Init bound to port=5550
+[1683639723.624718][33684:33689] CHIP:IN: UDP::Init bind&listen port=5550
+[1683639723.624730][33684:33689] CHIP:IN: UDP::Init bound to port=5550
+[1683639723.624732][33684:33689] CHIP:IN: TransportMgr initialized
+[1683639723.627968][33684:33689] CHIP:CTL: Setting wifi credentials from parameters
+[1683639723.627984][33684:33689] CHIP:CTL: Setting attestation nonce to random value
+[1683639723.628030][33684:33689] CHIP:CTL: Setting CSR nonce to random value
+[1683639723.628075][33684:33689] CHIP:CTL: Stopping commissioning discovery over DNS-SD
+[1683639723.628080][33684:33689] CHIP:CTL: Starting commissioning discovery over BLE
+[1683639723.628089][33684:33689] CHIP:CTL: Starting commissioning discovery over DNS-SD
+[1683639723.628319][33684:33690] CHIP:DL: TRACE: Bluez mainloop starting Thread
+[1683639723.628389][33684:33687] CHIP:DL: TRACE: Bus acquired for name C-8394
+[1683639723.630340][33684:33689] CHIP:DL: PlatformBlueZInit init success
+[1683639723.631957][33684:33687] CHIP:BLE: BLE removing known devices.
+[1683639723.632476][33684:33687] CHIP:BLE: BLE initiating scan.
+[1683639723.701799][33684:33687] CHIP:BLE: Device 24:FD:96:F0:D6:EA does not look like a CHIP device.
+[1683639724.943633][33684:33687] CHIP:BLE: Device 69:0B:D7:45:2C:65 does not look like a CHIP device.
+[1683639724.946868][33684:33687] CHIP:BLE: Device EC:93:7D:2D:72:76 does not look like a CHIP device.
+[1683639725.693300][33684:33687] CHIP:BLE: Device 69:0B:D7:45:2C:65 does not look like a CHIP device.
+[1683639725.693367][33684:33687] CHIP:BLE: Device 24:FD:96:F0:D6:EA does not look like a CHIP device.
+[1683639726.395923][33684:33687] CHIP:BLE: Device 69:0B:D7:45:2C:65 does not look like a CHIP device.
+[1683639733.670439][33684:33687] CHIP:CTL: Commissioning discovery over BLE failed: ../examples/chip-tool/third_party/connectedhomeip/src/platform/Linux/BLEManagerImpl.cpp:787: CHIP Error 0x00000032: Timeout
+[1683639733.670459][33684:33687] CHIP:-: ../examples/chip-tool/third_party/connectedhomeip/src/platform/Linux/BLEManagerImpl.cpp:787: CHIP Error 0x00000032: Timeout at ../examples/chip-tool/third_party/connectedhomeip/src/controller/SetUpCodePairer.cpp:283
+[1683639753.644380][33684:33689] CHIP:CTL: Discovery timed out
+[1683639753.644426][33684:33689] CHIP:CTL: Stopping commissioning discovery over DNS-SD
+[1683639753.644435][33684:33689] CHIP:TOO: Secure Pairing Failed
+[1683639753.644715][33684:33684] CHIP:CTL: Shutting down the commissioner
+[1683639753.644733][33684:33684] CHIP:CTL: Stopping commissioning discovery over DNS-SD
+[1683639753.644792][33684:33684] CHIP:CTL: Shutting down the controller
+[1683639753.644804][33684:33684] CHIP:IN: Expiring all sessions for fabric 0x1!!
+[1683639753.644808][33684:33684] CHIP:FP: Forgetting fabric 0x1
+[1683639753.644818][33684:33684] CHIP:TS: Pending Last Known Good Time: 2023-02-03T18:32:24
+[1683639753.644875][33684:33684] CHIP:TS: Previous Last Known Good Time: 2023-02-03T18:32:24
+[1683639753.644877][33684:33684] CHIP:TS: Reverted Last Known Good Time to previous value
+[1683639753.644894][33684:33684] CHIP:CTL: Shutting down the commissioner
+[1683639753.644899][33684:33684] CHIP:CTL: Stopping commissioning discovery over DNS-SD
+[1683639753.644910][33684:33684] CHIP:CTL: Shutting down the controller
+[1683639753.644913][33684:33684] CHIP:CTL: Shutting down the System State, this will teardown the CHIP Stack
+[1683639753.644942][33684:33684] CHIP:DMG: IM WH moving to [Uninitialized]
+[1683639753.644947][33684:33684] CHIP:DMG: IM WH moving to [Uninitialized]
+[1683639753.644949][33684:33684] CHIP:DMG: IM WH moving to [Uninitialized]
+[1683639753.644950][33684:33684] CHIP:DMG: IM WH moving to [Uninitialized]
+[1683639753.644954][33684:33684] CHIP:DMG: All ReadHandler-s are clean, clear GlobalDirtySet
+[1683639753.644969][33684:33684] CHIP:BLE: BleConnectionDelegate::CancelConnection is not implemented.
+[1683639753.645153][33684:33684] CHIP:DL: writing settings to file (/tmp/chip_counters.ini-WNAyUw)
+[1683639753.645597][33684:33684] CHIP:DL: renamed tmp file to file (/tmp/chip_counters.ini)
+[1683639753.645641][33684:33684] CHIP:DL: NVS set: chip-counters/total-operational-hours = 0 (0x0)
+[1683639753.645649][33684:33684] CHIP:DL: Inet Layer shutdown
+[1683639753.645655][33684:33684] CHIP:DL: BLE shutdown
+[1683639753.646025][33684:33684] CHIP:DL: System Layer shutdown
+[1683639753.646078][33684:33684] CHIP:TOO: Run command failure: ../examples/chip-tool/commands/pairing/PairingCommand.cpp:164: CHIP Error 0x00000003: Incorrect state
+
+
+No response from Esp 32
+S
+
