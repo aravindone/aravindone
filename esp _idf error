@@ -1,0 +1,16 @@
+Detecting the Python interpreter
+Checking "python" ...
+Python 3.10.6
+"python" has been detected
+Adding ESP-IDF tools to PATH...
+Using Python interpreter in /home/rntbci/.espressif/python_env/idf4.4_py3.10_env/bin/python
+Checking if Python packages are up to date...
+The following Python requirements are not satisfied:
+click>=7.0
+idf-component-manager~=1.0
+gdbgui==0.13.2.0; python_version < "3.11"
+To install the missing packages, please run "/home/rntbci/esp-idf/install.sh"
+Diagnostic information:
+    IDF_PYTHON_ENV_PATH: /home/rntbci/.espressif/python_env/idf4.4_py3.10_env
+    Python interpreter used: /home/rntbci/.espressif/python_env/idf4.4_py3.10_env/bin/python
+
