@@ -1,0 +1,156 @@
+rntbci@inmh100170:~/connectedhomeip/examples/lighting-app/esp32$ idf.py build
+/home/rntbci/esp-idf/tools/check_python_dependencies.py:12: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+Executing action: all (aliases: build)
+Running ninja in directory /home/rntbci/connectedhomeip/examples/lighting-app/esp32/build
+Executing "ninja all"...
+[11/1109] Generating ../../partition_table/partition-table.binPartition table binary generated. Contents:
+*******************************************************************************
+# ESP-IDF Partition Table
+# Name, Type, SubType, Offset, Size, Flags
+esp_secure_cert,63,6,0xd000,8K,encrypted
+nvs,data,nvs,0x10000,24K,
+nvs_keys,data,nvs_keys,0x16000,4K,
+otadata,data,ota,0x17000,8K,
+phy_init,data,phy,0x19000,4K,
+ota_0,app,ota_0,0x20000,1920K,
+ota_1,app,ota_1,0x200000,1920K,
+fctry,data,nvs,0x3e0000,24K,
+*******************************************************************************
+[31/1109] Generating ../../gen/app-codegen/cpp-app/app/PluginApplicationCallbacks.h, ../../gen/app-codegen/cpp-app/app/callback-stub.cpp2023-08-07 17:25:53 INFO    Parsing idl from /home/rntbci/connectedhomeip/examples/lighting-app/lighting-common/lighting-app.matter
+2023-08-07 17:25:54 INFO    Running code generator cpp-app
+2023-08-07 17:25:54 INFO    File to be generated: app/PluginApplicationCallbacks.h
+2023-08-07 17:25:54 INFO    Writing new data to: /home/rntbci/connectedhomeip/examples/lighting-app/esp32/build/gen/app-codegen/cpp-app/app/PluginApplicationCallbacks.h
+2023-08-07 17:25:54 INFO    File to be generated: app/callback-stub.cpp
+2023-08-07 17:25:54 INFO    Writing new data to: /home/rntbci/connectedhomeip/examples/lighting-app/esp32/build/gen/app-codegen/cpp-app/app/callback-stub.cpp
+2023-08-07 17:25:54 INFO    Done
+[282/1109] Generating ../../gen/app-zapgen/zapgen/app-templates/zap-generated/access.h, ../../gen/ap...ed/gen_config.h, ../../gen/app-zapgen/zapgen/app-templates/zap-generated/IMClusterCommandHandler.cpp🔧 Using temporary state directory: /tmp/zapot3u4cyx/zap.Fhv48Z
+🤖 ZAP generation started: 
+    🔍 input files: /home/rntbci/connectedhomeip/examples/lighting-app/lighting-common/lighting-app.zap
+    🔍 output pattern: /home/rntbci/connectedhomeip/examples/lighting-app/esp32/build/gen/app-zapgen/zapgen/app-templates/zap-generated
+    🔍 using templates: /home/rntbci/connectedhomeip/src/app/zap-templates/app-templates.json
+    🔍 using zcl data: /home/rntbci/connectedhomeip/src/app/zap-templates/zcl/zcl.json
+    🔍 zap version: ver. 2023.7.20, featureLevel 97, commit: b57cef1fc261cedcbee418566a3d1e83b2d200d6 from 2023-07-20T18:42:00.000Z, mode: binary, exe: zap-cli
+🕐 Setup time: 1s 878ms 
+👉 using input file: /home/rntbci/connectedhomeip/examples/lighting-app/lighting-common/lighting-app.zap
+👉 using output destination: /home/rntbci/connectedhomeip/examples/lighting-app/esp32/build/gen/app-zapgen/zapgen/app-templates/zap-generated
+🕐 File loading time: 171ms
+🤖 Generating files:
+    ✍  /home/rntbci/connectedhomeip/examples/lighting-app/esp32/build/gen/app-zapgen/zapgen/app-templates/zap-generated/CHIPClusters.h
+    ✍  /home/rntbci/connectedhomeip/examples/lighting-app/esp32/build/gen/app-zapgen/zapgen/app-templates/zap-generated/gen_config.h
+    ✍  /home/rntbci/connectedhomeip/examples/lighting-app/esp32/build/gen/app-zapgen/zapgen/app-templates/zap-generated/IMClusterCommandHandler.cpp
+    ✍  /home/rntbci/connectedhomeip/examples/lighting-app/esp32/build/gen/app-zapgen/zapgen/app-templates/zap-generated/access.h
+    ✍  /home/rntbci/connectedhomeip/examples/lighting-app/esp32/build/gen/app-zapgen/zapgen/app-templates/zap-generated/endpoint_config.h
+🕐 Generation time: 1s 440ms 
+Searching for zcl file from /home/rntbci/connectedhomeip/examples/lighting-app/lighting-common/lighting-app.zap
+Files generated in: /home/rntbci/connectedhomeip/examples/lighting-app/esp32/build/gen/app-zapgen/zapgen/app-templates/zap-generated
+[370/1109] Performing configure step for 'bootloader'-- Found Git: /usr/bin/git (found version "2.34.1") 
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/rntbci/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/rntbci/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/rntbci/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /home/rntbci/connectedhomeip/examples/lighting-app/esp32/sdkconfig
+Compiler supported targets: xtensa-esp32-elf
+
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Adding linker script /home/rntbci/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- App "bootloader" version: v5.1
+-- Adding linker script /home/rntbci/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/rntbci/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/rntbci/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/rntbci/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /home/rntbci/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.ld
+-- Adding linker script /home/rntbci/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_common esp_hw_support esp_rom esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: /home/rntbci/esp-idf/components/bootloader /home/rntbci/esp-idf/components/bootloader_support /home/rntbci/esp-idf/components/efuse /home/rntbci/esp-idf/components/esp_app_format /home/rntbci/esp-idf/components/esp_common /home/rntbci/esp-idf/components/esp_hw_support /home/rntbci/esp-idf/components/esp_rom /home/rntbci/esp-idf/components/esp_system /home/rntbci/esp-idf/components/esptool_py /home/rntbci/esp-idf/components/freertos /home/rntbci/esp-idf/components/hal /home/rntbci/esp-idf/components/log /home/rntbci/esp-idf/components/bootloader/subproject/main /home/rntbci/esp-idf/components/bootloader/subproject/components/micro-ecc /home/rntbci/esp-idf/components/newlib /home/rntbci/esp-idf/components/partition_table /home/rntbci/esp-idf/components/soc /home/rntbci/esp-idf/components/spi_flash /home/rntbci/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/rntbci/connectedhomeip/examples/lighting-app/esp32/build/bootloader
+[102/103] Generating binary image from built executableesptool.py v4.6.2
+Creating esp32 image...
+Merged 1 ELF section
+Successfully created esp32 image.
+Generated /home/rntbci/connectedhomeip/examples/lighting-app/esp32/build/bootloader/bootloader.bin
+[103/103] cd /home/rntbci/connectedhomeip/examples/lighting-app/esp32/build/bootloader/esp-idf/espto...ader 0x1000 /home/rntbci/connectedhomeip/examples/lighting-app/esp32/build/bootloader/bootloader.binBootloader binary size 0x6800 bytes. 0x800 bytes (7%) free.
+[630/1109] Performing configure step for 'chip_gn'Done. Made 232 targets from 206 files in 101ms
+[1001/1109] Building C object esp-idf/spidriver/CMakeFiles/__idf_spidriver.dir/spi_master_lobo.c.objIn file included from /home/rntbci/connectedhomeip/examples/lighting-app/esp32/third_party/connectedhomeip/examples/common/m5stack-tft/repo/components/spidriver/spi_master_lobo.c:70:
+/home/rntbci/esp-idf/components/driver/deprecated/driver/periph_ctrl.h:7:2: warning: #warning driver/periph_ctrl.h header is no longer used, and will be removed in future versions. [-Wcpp]
+    7 | #warning driver/periph_ctrl.h header is no longer used, and will be removed in future versions.
+      |  ^~~~~~~
+/home/rntbci/connectedhomeip/examples/lighting-app/esp32/third_party/connectedhomeip/examples/common/m5stack-tft/repo/components/spidriver/spi_master_lobo.c: In function 'spi_lobo_bus_remove_device':
+/home/rntbci/connectedhomeip/examples/lighting-app/esp32/third_party/connectedhomeip/examples/common/m5stack-tft/repo/components/spidriver/spi_master_lobo.c:625:17: warning: pointer 'handle' used after 'free' [-Wuse-after-free]
+  625 |                 spi_lobo_bus_free(handle->host_dev, 1);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rntbci/connectedhomeip/examples/lighting-app/esp32/third_party/connectedhomeip/examples/common/m5stack-tft/repo/components/spidriver/spi_master_lobo.c:624:17: note: call to 'free' here
+  624 |                 free(handle);
+      |                 ^~~~~~~~~~~~
+[1019/1109] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/LEDWidget.cpp.obj/home/rntbci/connectedhomeip/examples/lighting-app/esp32/main/LEDWidget.cpp: In member function 'void LEDWidget::Init()':
+/home/rntbci/connectedhomeip/examples/lighting-app/esp32/main/LEDWidget.cpp:61:5: warning: missing initializer for member 'ledc_channel_config_t::flags' [-Wmissing-field-initializers]
+   61 |     };
+      |     ^
+[1025/1109] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/__/third_party/connectedhomeip/examples/platform/esp32/shell_extension/heap_trace.cpp.objIn file included from /home/rntbci/connectedhomeip/examples/lighting-app/esp32/third_party/connectedhomeip/examples/platform/esp32/shell_extension/heap_trace.cpp:31:
+/home/rntbci/esp-idf/components/heap/include/esp_heap_trace.h:18:2: warning: #warning "esp_heap_trace.h is included but heap tracing is disabled in menuconfig, functions are no-ops" [-Wcpp]
+   18 | #warning "esp_heap_trace.h is included but heap tracing is disabled in menuconfig, functions are no-ops"
+      |  ^~~~~~~
+[1036/1109] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/__/third_party/connectedhomeip/examples/platform/esp32/common/Esp32AppServer.cpp.obj/home/rntbci/connectedhomeip/examples/lighting-app/esp32/third_party/connectedhomeip/examples/platform/esp32/common/Esp32AppServer.cpp:73:15: warning: 'size_t hex_string_to_binary(const char*, uint8_t*, size_t)' defined but not used [-Wunused-function]
+   73 | static size_t hex_string_to_binary(const char * hex_string, uint8_t * buf, size_t buf_size)
+      |               ^~~~~~~~~~~~~~~~~~~~
+/home/rntbci/connectedhomeip/examples/lighting-app/esp32/third_party/connectedhomeip/examples/platform/esp32/common/Esp32AppServer.cpp:49:16: warning: '{anonymous}::sTestEventTriggerEnableKey' defined but not used [-Wunused-variable]
+   49 | static uint8_t sTestEventTriggerEnableKey[TestEventTriggerDelegate::kEnableKeyLength] = { 0x00, 0x11, 0x22, 0x33, 0x44, 0x55,
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+[1050/1109] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/__/third_party/connectedhomeip/src/app/server/Server.cpp.obj/home/rntbci/connectedhomeip/examples/lighting-app/esp32/third_party/connectedhomeip/src/app/server/Server.cpp: In member function 'void chip::Server::CheckServerReadyEvent()':
+/home/rntbci/connectedhomeip/examples/lighting-app/esp32/third_party/connectedhomeip/src/app/server/Server.cpp:416:73: warning: missing initializer for member 'chip::DeviceLayer::ChipDeviceEvent::<anonymous>' [-Wmissing-field-initializers]
+  416 |         ChipDeviceEvent event = { .Type = DeviceEventType::kServerReady };
+      |                                                                         ^
+[1056/1109] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/__/third_party/connectedhomeip/src/app/clusters/access-control-server/access-control-server.cpp.obj/home/rntbci/connectedhomeip/examples/lighting-app/esp32/third_party/connectedhomeip/src/app/clusters/access-control-server/access-control-server.cpp: In function 'CHIP_ERROR {anonymous}::LogExtensionChangedEvent(const chip::app::Clusters::AccessControl::Structs::AccessControlExtensionStruct::Type&, const chip::Access::SubjectDescriptor&, chip::app::Clusters::AccessControl::ChangeTypeEnum)':
+/home/rntbci/connectedhomeip/examples/lighting-app/esp32/third_party/connectedhomeip/src/app/clusters/access-control-server/access-control-server.cpp:88:98: warning: missing initializer for member 'chip::app::Clusters::AccessControl::Events::AccessControlExtensionChanged::Type::adminNodeID' [-Wmissing-field-initializers]
+   88 |     ExtensionEvent event{ .changeType = changeType, .fabricIndex = subjectDescriptor.fabricIndex };
+      |                                                                                                  ^
+/home/rntbci/connectedhomeip/examples/lighting-app/esp32/third_party/connectedhomeip/src/app/clusters/access-control-server/access-control-server.cpp:88:98: warning: missing initializer for member 'chip::app::Clusters::AccessControl::Events::AccessControlExtensionChanged::Type::adminPasscodeID' [-Wmissing-field-initializers]
+/home/rntbci/connectedhomeip/examples/lighting-app/esp32/third_party/connectedhomeip/src/app/clusters/access-control-server/access-control-server.cpp:88:98: warning: missing initializer for member 'chip::app::Clusters::AccessControl::Events::AccessControlExtensionChanged::Type::latestValue' [-Wmissing-field-initializers]
+/home/rntbci/connectedhomeip/examples/lighting-app/esp32/third_party/connectedhomeip/src/app/clusters/access-control-server/access-control-server.cpp: In member function 'virtual void {anonymous}::AccessControlAttribute::OnEntryChanged(const chip::Access::SubjectDescriptor*, chip::FabricIndex, size_t, const Entry*, chip::Access::AccessControl::EntryListener::ChangeType)':
+/home/rntbci/connectedhomeip/examples/lighting-app/esp32/third_party/connectedhomeip/src/app/clusters/access-control-server/access-control-server.cpp:391:107: warning: missing initializer for member 'chip::app::Clusters::AccessControl::Events::AccessControlEntryChanged::Type::adminNodeID' [-Wmissing-field-initializers]
+  391 |     AclEvent event{ .changeType = ChangeTypeEnum::kChanged, .fabricIndex = subjectDescriptor->fabricIndex };
+      |                                                                                                           ^
+/home/rntbci/connectedhomeip/examples/lighting-app/esp32/third_party/connectedhomeip/src/app/clusters/access-control-server/access-control-server.cpp:391:107: warning: missing initializer for member 'chip::app::Clusters::AccessControl::Events::AccessControlEntryChanged::Type::adminPasscodeID' [-Wmissing-field-initializers]
+/home/rntbci/connectedhomeip/examples/lighting-app/esp32/third_party/connectedhomeip/src/app/clusters/access-control-server/access-control-server.cpp:391:107: warning: missing initializer for member 'chip::app::Clusters::AccessControl::Events::AccessControlEntryChanged::Type::latestValue' [-Wmissing-field-initializers]
+[1105/1109] Generating ld/sections.ldFAILED: esp-idf/esp_system/ld/sections.ld /home/rntbci/connectedhomeip/examples/lighting-app/esp32/build/esp-idf/esp_system/ld/sections.ld 
+cd /home/rntbci/connectedhomeip/examples/lighting-app/esp32/build/esp-idf/esp_system && /home/rntbci/connectedhomeip/.environment/pigweed-venv/bin/python /home/rntbci/esp-idf/tools/ldgen/ldgen.py --config /home/rntbci/connectedhomeip/examples/lighting-app/esp32/sdkconfig --fragments-list "/home/rntbci/esp-idf/components/xtensa/linker.lf;/home/rntbci/esp-idf/components/esp_ringbuf/linker.lf;/home/rntbci/esp-idf/components/driver/linker.lf;/home/rntbci/esp-idf/components/esp_pm/linker.lf;/home/rntbci/esp-idf/components/esp_mm/linker.lf;/home/rntbci/esp-idf/components/spi_flash/linker.lf;/home/rntbci/esp-idf/components/esp_system/linker.lf;/home/rntbci/esp-idf/components/esp_system/app.lf;/home/rntbci/esp-idf/components/esp_rom/linker.lf;/home/rntbci/esp-idf/components/hal/linker.lf;/home/rntbci/esp-idf/components/log/linker.lf;/home/rntbci/esp-idf/components/heap/linker.lf;/home/rntbci/esp-idf/components/soc/linker.lf;/home/rntbci/esp-idf/components/esp_hw_support/linker.lf;/home/rntbci/esp-idf/components/freertos/linker.lf;/home/rntbci/esp-idf/components/freertos/linker_common.lf;/home/rntbci/esp-idf/components/newlib/newlib.lf;/home/rntbci/esp-idf/components/newlib/system_libs.lf;/home/rntbci/esp-idf/components/esp_common/common.lf;/home/rntbci/esp-idf/components/esp_common/soc.lf;/home/rntbci/esp-idf/components/app_trace/linker.lf;/home/rntbci/esp-idf/components/esp_event/linker.lf;/home/rntbci/esp-idf/components/esp_phy/linker.lf;/home/rntbci/esp-idf/components/lwip/linker.lf;/home/rntbci/esp-idf/components/esp_netif/linker.lf;/home/rntbci/esp-idf/components/esp_coex/linker.lf;/home/rntbci/esp-idf/components/esp_wifi/linker.lf;/home/rntbci/esp-idf/components/bt/linker.lf;/home/rntbci/esp-idf/components/esp_adc/linker.lf;/home/rntbci/esp-idf/components/esp_gdbstub/linker.lf;/home/rntbci/esp-idf/components/esp_psram/linker.lf;/home/rntbci/esp-idf/components/esp_lcd/linker.lf;/home/rntbci/esp-idf/components/espcoredump/linker.lf;/home/rntbci/esp-idf/components/ieee802154/linker.lf;/home/rntbci/esp-idf/components/openthread/linker.lf" --input /home/rntbci/esp-idf/components/esp_system/ld/esp32/sections.ld.in --output /home/rntbci/connectedhomeip/examples/lighting-app/esp32/build/esp-idf/esp_system/ld/sections.ld --kconfig /home/rntbci/esp-idf/Kconfig --env-file /home/rntbci/connectedhomeip/examples/lighting-app/esp32/build/config.env --libraries-file /home/rntbci/connectedhomeip/examples/lighting-app/esp32/build/ldgen_libraries --objdump /home/rntbci/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-objdump
+Traceback (most recent call last):
+  File "/home/rntbci/esp-idf/tools/ldgen/ldgen.py", line 16, in <module>
+    from ldgen.entity import EntityDB
+  File "/home/rntbci/esp-idf/tools/ldgen/ldgen/entity.py", line 12, in <module>
+    from pyparsing import (Group, Literal, OneOrMore, ParseException, SkipTo, Suppress, White, Word, ZeroOrMore, alphas,
+ImportError: cannot import name 'rest_of_line' from 'pyparsing' (/home/rntbci/connectedhomeip/.environment/pigweed-venv/lib/python3.10/site-packages/pyparsing.py)
+ninja: build stopped: subcommand failed.
+ninja failed with exit code 1, output of the command is in the /home/rntbci/connectedhomeip/examples/lighting-app/esp32/build/log/idf_py_stderr_output_26022 and /home/rntbci/connectedhomeip/examples/lighting-app/esp32/build/log/idf_py_stdout_output_26022
+rntbci@inmh100170:~/connectedhomeip/examples/lighting-app/esp32$ pip show pyparsing
+Name: pyparsing
+Version: 2.3.1
+Summary: Python parsing module
+Home-page: https://github.com/pyparsing/pyparsing/
+Author: Paul McGuire
+Author-email: ptmcg@users.sourceforge.net
+License: MIT License
+Location: /home/rntbci/connectedhomeip/.environment/pigweed-venv/lib/python3.10/site-packages
+Requires: 
+Required-by: 
+
